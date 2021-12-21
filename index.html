@@ -37,7 +37,7 @@
       $.getJSON('1.json', '', function ( profile ) {
         $('#profile1').append('<pre>' + JSON.stringify(profile, null, 2) + '</pre>');
         var chart = new PersonalitySunburstChart({selector:'#sunburstChart1', version: 'v3'});
-        chart.show(profile, '');
+        chart.hide(profile, '');
       });
     </script>
   </div>
